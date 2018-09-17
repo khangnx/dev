@@ -23,9 +23,7 @@ Method này sẽ trả về 3 kết quả như sau:
 Khi người dùng không chấp nhận cho phép hiển thị thông báo hệ thống lập trình viên có thể hỏi lại người dùng bằng Notification.requestPermission() method.
 
 Notification.requestPermission().then(function(result) {
-
   console.log(result);
-
 });
 
 Method này sẽ tạo một hộp thoại để hỏi lại người dùng về quyền truy cập hệ thống.
