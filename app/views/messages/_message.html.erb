@@ -1,0 +1,25 @@
+<li class="new_message">
+  <%= message.name.to_s + " : " + message.content.to_s %>
+</li>
+<script type="text/javascript">
+	var massage_name = $("#message_name").val()
+	var massage_content = $("#message_content").val()
+	$("#message_name").val('')
+	$("#message_content").val('')
+	if (Notification.permission === "granted" && massage_name != undefined && massage_name != '') {
+    var notification = new Notification("You have new massage", {
+      icon: "http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/envelope-letter-icon.png",
+      body: massage_name + ":" + massage_content,
+    });
+
+    notification.onclick = function () {
+      window.open("http://localhost:3000/messages/");
+    };
+
+    setTimeout(function(){
+      notification.close();
+    },5000);
+	} else {
+	  Notification.requestPermission();
+	}
+</script>
