@@ -47,8 +47,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: upload_video_production
-  username: upload_video
-  password: <%= ENV['UPLOAD_VIDEO_DATABASE_PASSWORD'] %>
+# production:
+#   <<: *default
+#   database: upload_video_production
+#   username: upload_video
+#   password: <%= ENV['UPLOAD_VIDEO_DATABASE_PASSWORD'] %>
