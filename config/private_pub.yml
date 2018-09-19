@@ -6,6 +6,6 @@ test:
   secret_token: "secret"
 production:
   port: 9292
-  server: "http://localhost:9292/faye"
+  server: "http://52.15.207.54:9292/faye"
   secret_token: "secret"
   signature_expiration: 3600 # one hour
