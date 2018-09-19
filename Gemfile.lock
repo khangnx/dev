@@ -76,9 +76,6 @@ GEM
     crass (1.0.4)
     daemons (1.2.6)
     dotenv (2.5.0)
-    dotenv-rails (2.5.0)
-      dotenv (= 2.5.0)
-      railties (>= 3.2, < 6.0)
     em-http-request (1.1.5)
       addressable (>= 2.3.4)
       cookiejar (!= 0.3.1)
@@ -231,7 +228,6 @@ DEPENDENCIES
   capistrano3-puma
   coffee-rails (~> 4.2)
   dotenv
-  dotenv-rails
   figaro
   jbuilder (~> 2.5)
   jquery-rails
