@@ -9,8 +9,8 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.0'
 # Load environment
 gem 'dotenv'
-# gem 'dotenv-rails'
-gem 'figaro'
+gem 'dotenv-rails'
+# gem 'figaro'
 group :development do
   gem 'capistrano'
   gem 'capistrano3-puma'
