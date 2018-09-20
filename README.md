@@ -1,24 +1,38 @@
-# README
+**I. CHÚ Ý KHI SỬ DỤNG NOTIFICATIONS API**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Để sử dụng được **Notifications API** cần phải chú ý một số điều sau:
 
-Things you may want to cover:
+- Người sử dụng cần cấp phép cho trình duyệt hiển thị các thông báo hệ thống, điều này sẽ được thực hiện khi trang web khởi tạo. Các thiết lập này thường được kéo dài trong một phiên làm việc. Để hiển thị thiết lập này cho người dùng lập, trình viên có thể sử dụng requestPermission() method.
+- Để tạo mới một thông báo hệ thống chúng ta sử dụng Notification() constructor, điều này đã bao gồm một số thiết lập như tiêu đề, các đối tượng hiển thị nội dung là văn bản, âm thanh ...
+- Hiện tại Notifications API chỉ support cho một số WebKit browsers như Google Chrome, FireFox và Safari.
 
-* Ruby version
+**II. CÁCH SỬ DỤNG NOTIFICATIONS API**
 
-* System dependencies
+**1. Check quyền hiển thị thông báo hệ thống**
 
-* Configuration
+Để xem người dùng đã cấp quyền cho hiển thị thông báo hệ thống chưa có thể sử dụng method Notification.permission.
 
-* Database creation
+Method này sẽ trả về 3 kết quả như sau:
 
-* Database initialization
+- Default: Người dùng không trả lời thông báo, nên mặc định sẽ là không cho phép hiển thị thông báo hệ thống.
+- Granted: Người dùng cho phép hiển thị thông báo hệ thống khi được hỏi.
+- Denied: Người dùng từ chối cho phép hiển thị thông báo hệ thống khi được hỏi.
 
-* How to run the test suite
+**2. Lấy quyền hiển thị thông báo hệ thống từ người dùng**
 
-* Services (job queues, cache servers, search engines, etc.)
+Khi người dùng không chấp nhận cho phép hiển thị thông báo hệ thống lập trình viên có thể hỏi lại người dùng bằng Notification.requestPermission() method.
 
-* Deployment instructions
+Notification.requestPermission().then(function(result) {
+  console.log(result);
+});
 
-* ...
+Method này sẽ tạo một hộp thoại để hỏi lại người dùng về quyền truy cập hệ thống.
+
+**3. Notification events**
+
+Notifications API cung cấp một số sự kiện cơ bản cho một thông báo.
+
+- Click: Sự kiện khi người dùng click vào thông báo.
+- Error: Sự kiện khi việc hiển thị thông báo xảy ra vấn đề lỗi.
+- Close: Sự kiện khi người dùng đóng thông báo.
+- Show: Sự kiện khi thông báo được hiển thị.
