@@ -42,9 +42,3 @@ Notifications API cung cấp một số sự kiện cơ bản cho một thông b
 | IE | Firefox | Chrome | Safari | Edge | iOS Safari | Opera Mini | Chrome for Android | UC Browser for Android |
 |----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|----:|
 | 11 | 61,62,63,64 |  49,67,68,69,70,71,72 | 11.1,12,TP | 17,18 | 10.2,10.3,11.2, 11.4, 12 | All | 69 | 11.8 |
-
-| Tables        | Are           | Cool  | 
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
