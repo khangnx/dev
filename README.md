@@ -37,7 +37,7 @@ Notifications API cung cấp một số sự kiện cơ bản cho một thông b
 - Close: Sự kiện khi người dùng đóng thông báo.
 - Show: Sự kiện khi thông báo được hiển thị.
 
-**4. Các trình duyệt hỗ trợ notification API **
+**4. Các trình duyệt hỗ trợ notification API**
 
 | IE | Firefox | Chrome | Safari | Edge | iOS Safari | Opera Mini | Chrome for Android | UC Browser for Android |
 |----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|----:|
