@@ -2,8 +2,8 @@
 
 Để sử dụng được **Notifications API** cần phải chú ý một số điều sau:
 
-- Người sử dụng cần cấp phép cho trình duyệt hiển thị các thông báo hệ thống, điều này sẽ được thực hiện khi trang web khởi tạo. Các thiết lập này thường được kéo dài trong một phiên làm việc. Để hiển thị thiết lập này cho người dùng lập, trình viên có thể sử dụng requestPermission() method.
-- Để tạo mới một thông báo hệ thống chúng ta sử dụng Notification() constructor, điều này đã bao gồm một số thiết lập như tiêu đề, các đối tượng hiển thị nội dung là văn bản, âm thanh ...
+- Người sử dụng cần cấp phép cho trình duyệt hiển thị các thông báo hệ thống, điều này sẽ được thực hiện khi trang web khởi tạo. Các thiết lập này thường được kéo dài trong một phiên làm việc. Để hiển thị thiết lập này cho người dùng lập, trình viên có thể sử dụng `requestPermission()` method.
+- Để tạo mới một thông báo hệ thống chúng ta sử dụng `Notification() constructor`, điều này đã bao gồm một số thiết lập như tiêu đề, các đối tượng hiển thị nội dung là văn bản, âm thanh ...
 - Hiện tại Notifications API chỉ support cho một số WebKit browsers như Google Chrome, FireFox và Safari.
 
 **II. CÁCH SỬ DỤNG NOTIFICATIONS API**
@@ -53,7 +53,7 @@ Notification API cung cấp một số properties trên Notification Object
 - Notification.timestamp: Chỉ định thời gian thông báo được tạo hoặc áp dụng (quá khứ, hiện tại hoặc tương lai).
 
 
-**4. Các trình duyệt hỗ trợ notification API**
+**5. Các trình duyệt hỗ trợ notification API**
 
 | IE | Firefox | Chrome | Safari | Edge | iOS Safari | Opera Mini | Chrome for Android | UC Browser for Android |
 |----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|----:|
