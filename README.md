@@ -37,6 +37,22 @@ Notifications API cung cấp một số sự kiện cơ bản cho một thông b
 - Close: Sự kiện khi người dùng đóng thông báo.
 - Show: Sự kiện khi thông báo được hiển thị.
 
+**4. Notification Properties**
+
+Notification API cung cấp một số properties trên Notification Object
+
+- Notification.title: Tiêu đề của thông báo như được chỉ định trong tham số tùy chọn của hàm tạo.
+- Notification.dir: Hướng văn bản của thông báo như được chỉ định trong tham số tùy chọn của hàm tạo.
+- Notification.lang: Mã ngôn ngữ của thông báo được chỉ định trong tham số tùy chọn của hàm tạo.
+- Notification.body: Chuỗi nội dung của thông báo được chỉ định trong tham số tùy chọn của hàm tạo.
+- Notification.tag: ID của thông báo (nếu có) như được chỉ định trong tham số tùy chọn của hàm tạo.
+- Notification.icon: URL của hình ảnh được sử dụng làm biểu tượng được chỉ định trong thông số tùy chọn của hàm tạo
+- Notification.data: Trả về bản sao có cấu trúc của dữ liệu của thông báo.
+- Notification.requireInteraction:  cho biết rằng trên các thiết bị có màn hình đủ lớn, thông báo sẽ vẫn hoạt động cho đến khi người dùng nhấp hoặc loại bỏ nó
+- Notification.silent: Chỉ định xem thông báo có nên im lặng hay không, tức là không phát ra âm thanh hoặc rung, bất kể cài đặt thiết bị.
+- Notification.timestamp: Chỉ định thời gian thông báo được tạo hoặc áp dụng (quá khứ, hiện tại hoặc tương lai).
+
+
 **4. Các trình duyệt hỗ trợ notification API**
 
 | IE | Firefox | Chrome | Safari | Edge | iOS Safari | Opera Mini | Chrome for Android | UC Browser for Android |
